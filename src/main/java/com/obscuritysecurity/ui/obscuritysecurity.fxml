@@ -1,0 +1,46 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:id="mainGridPane"
+          fx:controller="main.java.com.obscuritysecurity.ui.Controller" alignment="center">
+
+    <GridPane fx:id="topRow" GridPane.rowIndex="0">
+        <GridPane fx:id="numberPadGridPane" GridPane.columnIndex="0">
+            <Button fx:id="numPad1" text="1" GridPane.columnIndex="0"/>
+            <Button fx:id="numPad2" text="2" GridPane.columnIndex="1"/>
+            <Button fx:id="numPad3" text="3" GridPane.columnIndex="2"/>
+            <Button fx:id="numPad4" text="4" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Button fx:id="numPad5" text="5" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Button fx:id="numPad6" text="6" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+            <Button fx:id="numPad7" text="7" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Button fx:id="numPad8" text="8" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Button fx:id="numPad9" text="9" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+            <Button fx:id="numPad0" text="0" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        </GridPane>
+        <GridPane fx:id="statusPane" GridPane.columnIndex="1">
+            <TextField fx:id="statusTextField" text="Ready" disable="true" prefWidth="400" prefHeight="100"
+                       alignment="TOP_LEFT"/>
+        </GridPane>
+    </GridPane>
+
+    <GridPane fx:id="middleRow" GridPane.rowIndex="1">
+        <GridPane fx:id="zoneGridPane" GridPane.columnIndex="0" hgap="10">
+            <CheckBox fx:id="zone1" text="Zone1" GridPane.columnIndex="0"/>
+            <CheckBox fx:id="zone2" text="Zone2" GridPane.columnIndex="1"/>
+            <CheckBox fx:id="zone3" text="Zone3" GridPane.columnIndex="2"/>
+        </GridPane>
+        <GridPane fx:id="buttonsPane" GridPane.columnIndex="1">
+            <Text text="      " GridPane.columnIndex="0"/>
+            <Button fx:id="stayButton" text="Stay" GridPane.columnIndex="1"/>
+            <Button fx:id="awayButton" text="Away" GridPane.columnIndex="2"/>
+        </GridPane>
+        <GridPane fx:id="cancelPane" GridPane.columnIndex="2" hgap="15">
+            <Button fx:id="cancelButton" text="Cancel" GridPane.columnIndex="2"/>
+        </GridPane>
+    </GridPane>
+
+    <GridPane fx:id="bottomRow" GridPane.rowIndex="2" hgap="65">
+        <Text fx:id="statusText" text="Ready Status" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <Button fx:id="motionButton" text="Motion Detector" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    </GridPane>
+</GridPane>
